@@ -1,1 +1,1 @@
-# KonnexionsBiplav
+These files are either classwork or manual implementation of my projects.
