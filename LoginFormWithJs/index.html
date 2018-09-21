@@ -27,6 +27,30 @@
             border-radius: 8px;
         }
 
+        main , #container {
+            animation-duration: 2s;
+            animation-name: float-up;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes float-up {
+            0% {
+                top:40%;
+                opacity:0;
+            }
+            33% {
+                top: 43.3%;
+                opacity: 1;
+            }
+            66% {
+                top: 46.3%;
+            }
+            100% {
+                top:50%;
+            }
+        }
+
         #container:before {
             width: 400px;
             height: 550px;
@@ -87,10 +111,25 @@
             color: rgba(255, 255, 255, 0.8);
         }
     </style>
-    <script type="text/javascript">
-        alert("Hello!!!")
-        var name=prompt("What is your name?");
-        console.log(name);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#name").mouseover(function () {
+                $("#name").css("color", "silver");
+            });
+
+            $("#name").mouseout(function () {
+                $("#name").css("color", "white");
+            });
+
+            $("#container").hover(function () {
+                $("form img").filter(':not(:animated)').animate({ width: "150px", height: "150px" });
+            });
+
+            $("#container").mouseout(function () {
+                $("form img").animate({ width: "120px", height: "120px" });
+            });
+        });
     </script>
 </head>
 
@@ -98,11 +137,12 @@
     <div id="container">
         <form action="">
             <img src="dp.jpg"><br>
-            <input type="text" value="@biplov_adhikary"><br>
+            <input type="text" value="@biplov_adhikary" id="name"><br>
             <input type="password"><br>
             <input type="submit" value="SIGN IN"><br>
             <span><a href="#">Forgot Password?</a></span>
         </form>
     </div>
 </main>
+
 </html>
