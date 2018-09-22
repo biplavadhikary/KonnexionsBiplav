@@ -33,6 +33,12 @@
             document.getElementById("page").style.display = "block";
             document.body.style.background = "url(bg_blur.jpg)";
         }
+        function setModal(src, title) {
+            document.getElementById("image-gallery-image").setAttribute("src", src);
+            document.getElementById("image-gallery-title").innerHTML = title;
+            document.getElementById("modal-download").setAttribute("href", src);
+            //document.getElementById("modal-download").href= src;
+        }
     </script>
     <style>
         .nav {
@@ -45,7 +51,7 @@
         }
 
         .nav-link:hover {
-            background-image: linear-gradient(-45deg,lime,cyan);
+            background-image: linear-gradient(-45deg, lime, cyan);
             border-radius: 0;
         }
 
@@ -79,6 +85,10 @@
                 height: 50vw;
                 object-fit: cover;
             }
+        }
+
+        .card > img {
+            cursor: zoom-in;
         }
 
         .btn {
@@ -212,9 +222,8 @@
             <div class="container">
                 <div class="row">
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <div class="diamond">
-                            <img class="card-img-top img-thumbnail rotate" src="img/p.jpg" alt="Card image cap">
-                        </div>
+                        <img class="card-img-top img-thumbnail rotate" src="img/p.jpg" onclick="setModal('img/p.jpg','Pie')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Pie</h5>
                             <p class="card-text"><strong>Android 9</strong> adapts to you and how you use your phone,
@@ -226,7 +235,8 @@
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <img class="card-img-top img-thumbnail" src="img/o.jpg" alt="Card image cap">
+                        <img class="card-img-top img-thumbnail" src="img/o.jpg" onclick="setModal('img/o.jpg','Oreo')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Oreo</h5>
                             <p class="card-text"><strong>Open Wonder.</strong>
@@ -239,7 +249,8 @@
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <img class="card-img-top img-thumbnail" src="img/n.jpg" alt="Card image cap">
+                        <img class="card-img-top img-thumbnail" src="img/n.jpg" onclick="setModal('img/n.jpg','Nougat')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Nougat</h5>
                             <p class="card-text"><strong>Android 7.0 Nougat.</strong>
@@ -256,7 +267,8 @@
                 <br />
                 <div class="row">
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <img class="card-img-top img-thumbnail min-width:100%; min-height:100%;" src="img/m.jpg" alt="Card image cap">
+                        <img class="card-img-top img-thumbnail" src="img/m.jpg" onclick="setModal('img/m.jpg','Marshmallow')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Marshmallow</h5>
                             <p class="card-text"><strong>Spot-On Answers, Fast. </strong>
@@ -271,7 +283,8 @@
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <img class="card-img-top img-thumbnail" src="img/l.jpg" alt="Card image cap">
+                        <img class="card-img-top img-thumbnail" src="img/l.jpg" onclick="setModal('img/l.jpg','Lollipop')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Lollipop</h5>
                             <p class="card-text"><strong>On more than your phone and tablet.</strong>
@@ -283,7 +296,8 @@
                         </div>
                     </div>
                     <div class="card col-lg-4 col-md-6 col-sm-6 shadow" style="width: 18rem; padding:0;">
-                        <img class="card-img-top img-thumbnail" src="img/k.jpg" alt="Card image cap">
+                        <img class="card-img-top img-thumbnail" src="img/k.jpg" onclick="setModal('img/k.jpg','Kitkat')"
+                            data-toggle="modal" data-target="#image-gallery">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Kitkat</h5>
                             <p class="card-text"><strong>Just say “OK Google”</strong>
@@ -342,6 +356,28 @@
                     </div>
                 </div>
             </footer>
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="image-gallery-title">Image</h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                                    class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                        </div>
+                        <div class="modal-footer">
+                            <a id="modal-download" type="button" class="btn btn-secondary float-left" href="" download=""
+                                target="_blank">
+                                <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 
