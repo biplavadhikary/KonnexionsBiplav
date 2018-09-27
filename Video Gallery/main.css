@@ -1,0 +1,11 @@
+.navbar .navbar-brand img {
+    height: 50px;
+  }
+
+body {
+    background-image: url("bg2.jpg");
+    height: 100vh; 
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
