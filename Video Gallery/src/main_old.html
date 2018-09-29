@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>Ed Sheeran Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark aqua-gradient">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="http://www.edsheeran.com/">
+            <img src="src/logo.gif">
+        </a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://en.wikipedia.org/wiki/Ed_Sheeran">Biography</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Tours</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Europe</a>
+                        <a class="dropdown-item" href="#">America</a>
+                        <a class="dropdown-item" href="#">Asia</a>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- Links -->
+
+            <form class="form-inline" onsubmit="searchGoogle()" target="_blank">
+                <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="google search">
+                </div>
+            </form>
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--/.Navbar-->
+
+    <div class="view full-page-intro">
+        <video class="video-intro" autoplay loop muted>
+            <source src="src/intro.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-blue-light d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row d-flex h-100 justify-content-center align-items-center wow fadeIn">
+                    <div class="col-md-6 mb-4 white-text text-center text-md-left">
+                        <h1 class="display-4 font-weight-bold">Music-Video Gallery</h1>
+                        <hr class="hr-light">
+                        <p>
+                            <strong>Experience the best of Ed Sheeran</strong>
+                        </p>
+                        <p class="mb-4 d-none d-md-block">
+                            <strong>We have collected all the hits of Ed Sheeran and put in into a single page
+                                so you won't be having the need to search your favourite song everytime
+                            </strong>
+                        </p>
+                        <a target="_blank" onclick="scrollContent()" class="btn btn-outline-white">Click to begin
+                            <i class="fa fa-graduation-cap ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-5 mb-4">
+                        <img src="src/ed.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vignette"></div>
+    </div>
+
+    <div class="video-content">
+        <div class="container">
+            <!--Section: Cards-->
+            <section class="text-center">
+                <!--Grid row-->
+                <div class="row mb-4 wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x6aYlFlc0Cw"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Perfect</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Classical-crossover , rock<br>
+                                    Length: 4:23<br>
+                                    Songwriter(s): Ed , Beyoncé & Andrea <br>
+                                    Producer(s): Ed , Wills & Benny </p>
+                                <p class="card-text">
+                                    <strong>Released on 26 September 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iWZmdoY1aTE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Happier</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Folk<br>
+                                    Length: 3:27<br>
+                                    Songwriter(s): Ed & Ryan Tedder<br>
+                                    Producer(s): Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 27 April 2018</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ytb7J0ciBcE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Castle on the Hill</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2016<br>
+                                    Genre: Folk , rock<br>
+                                    Length: 4:21<br>
+                                    Songwriter(s): Ed , Benjamin Levin<br>
+                                    Producer(s): Ed , Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 6 January 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                </div><br>
+                <!--Grid row-->
+            </section>
+            <!--Section: Cards-->
+        </div>
+    </div>
+
+    <div class="video-content2">
+        <div class="container">
+            <!--Section: Cards-->
+            <section class="text-center">
+                <!--Grid row-->
+                <div class="row mb-4 wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x6aYlFlc0Cw"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Perfect</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Classical-crossover , rock<br>
+                                    Length: 4:23<br>
+                                    Songwriter(s): Ed , Beyoncé & Andrea <br>
+                                    Producer(s): Ed , Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 26 September 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iWZmdoY1aTE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Happier</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Folk<br>
+                                    Length: 3:27<br>
+                                    Songwriter(s): Ed & Ryan Tedder<br>
+                                    Producer(s): Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 27 April 2018</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ytb7J0ciBcE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Castle on the Hill</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2016<br>
+                                    Genre: Folk , rock<br>
+                                    Length: 4:21<br>
+                                    Songwriter(s): Ed , Benjamin Levin<br>
+                                    Producer(s): Ed , Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 6 January 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                </div><br>
+                <!--Grid row-->
+            </section>
+            <!--Section: Cards-->
+        </div>
+    </div>
+    
+    <div class="video-content3">
+        <div class="container">
+            <!--Section: Cards-->
+            <section class="text-center">
+                <!--Grid row-->
+                <div class="row mb-4 wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x6aYlFlc0Cw"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Perfect</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Classical-crossover , rock<br>
+                                    Length: 4:23<br>
+                                    Songwriter(s): Ed , Beyoncé & Andrea <br>
+                                    Producer(s): Ed , Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 26 September 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iWZmdoY1aTE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Happier</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2017<br>
+                                    Genre: Folk<br>
+                                    Length: 3:27<br>
+                                    Songwriter(s): Ed & Ryan Tedder<br>
+                                    Producer(s): Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 27 April 2018</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card image-->
+                            <div class="view overlay">
+                                <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ytb7J0ciBcE"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!--Title-->
+                                <h4 class="card-title">Castle on the Hill</h4>
+                                <!--Text-->
+                                <p class="card-text">
+                                    Recorded: 2016<br>
+                                    Genre: Folk , rock<br>
+                                    Length: 4:21<br>
+                                    Songwriter(s): Ed , Benjamin Levin<br>
+                                    Producer(s): Ed , Benny Blanco</p>
+                                <p class="card-text">
+                                    <strong>Released on 6 January 2017</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                </div><br>
+                <!--Grid row-->
+            </section>
+            <!--Section: Cards-->
+        </div>
+    </div>
+</body>
+
+</html>
