@@ -26,6 +26,8 @@ video.video-intro{
 
 .video-content,.video-content2,.video-content3 {
     background-image: url("src/ed1.jpg");
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
