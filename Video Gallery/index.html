@@ -96,20 +96,28 @@
     </style>
     <script>
         function greetWelcome() {
-            var name = document.getElementById("username")[0];
-            alert('Sign-Up Succesfull', name);
+            var name = document.getElementById("username").textContent;
+            var pass = document.getElementById("password").textContent;
+
+            if (!name.localeCompare(pass)) {
+                alert('User Name and Password cannot be Same');
+            }
+            else {
+                alert('Sign-Up Succesfull', name);
+                window.open('Main.html');
+            }
         }
     </script>
 </head>
 
 <main>
     <div id="container">
-        <form action="Main.html" onsubmit="greetWelcome()">
+        <form onsubmit="greetWelcome()">
             <img src="Login/logo.png"><br>
             <input type="text" value="biplav_adhikary" id="username" required><br>
             <input type="email" placeholder="Email-Id" required><br>
-            <input type="password" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required><br>
-            <input type="text" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <input type="password" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" id="password" required><br>
+            <input type="text" placeholder="Phone number" pattern="^\d{10}$"><br>
             <input type="submit" value="SIGN UP"><br><br>
             <span><a href="">Sign-In Instead</a></span>
         </form>

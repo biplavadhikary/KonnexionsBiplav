@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel='stylesheet' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill" style="padding: 20px 50px 20px 50px; background: linear-gradient(20deg,rgba(0, 0, 0, 0.144),rgba(33, 28, 97, 0.514),rgb(125, 150, 35));">
+        <li class="nav-item">
+            <a class="nav-link" style="font-size: 16px; background-image: linear-gradient(-45deg,rgb(0, 4, 255),cyan); color: white; border: 1px solid cyan; border-radius:0;"
+                href="#">Tic-Tac-Toe</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-unselected" href="../Counter/Counter.html" target="_blank">Counter</a>
+        </li>
+    </ul>
+    <div id="tic-tac-toe">
+        <div>
+            <div class="row">
+                <h1 class="deepshd">Tic Tac Toe</h1>
+            </div>
+            <ul class="row" id="game">
+                <li id="one" class="btn span1" style="color: navy;">+</li>
+                <li id="two" class="btn span1" style="color: navy;">+</li>
+                <li id="three" class="btn span1" style="color: navy;">+</li>
+                <li id="four" class="btn span1" style="color: black;">+</li>
+                <li id="five" class="btn span1" style="color: black;">+</li>
+                <li id="six" class="btn span1" style="color: black;">+</li>
+                <li id="seven" class="btn span1" style="color: darkgreen;">+</li>
+                <li id="eight" class="btn span1" style="color: darkgreen;">+</li>
+                <li id="nine" class="btn span1" style="color: darkgreen;">+</li>
+            </ul>
+            <div class="clr">&nbsp;</div>
+            <div class="row">
+                <a href="#" id="reset" class="btn bt">Play Again</a>
+            </div><br>
+            <div class="row">
+                <h1 class="deepshd">Score Board</h1>
+                <div class="row">
+                    <button class="btn aqua-gradient bt" style="margin-left: 65px" onclick="show_score()">Click to show Score</button>
+                </div><br>
+                <div class="span3" id="scr">
+                    <div class="input-prepend input-append">
+                        <span class="add-on win_text">O</span><strong id="o_win" class="win_times add-on">0</strong><span
+                            class="add-on">Times</span>
+                    </div>
+                    <div class="input-prepend input-append">
+                        <span class="add-on win_text">X</span><strong id="x_win" class="win_times add-on">0</strong><span
+                            class="add-on">Times</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

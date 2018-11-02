@@ -1,0 +1,128 @@
+body {
+    background: url("bg.jpg") no-repeat right center fixed; 
+}
+
+.deepshd {
+    font-size: 40px;
+    color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .1em;
+}
+
+.black {
+    color: black;
+}
+
+.bt {
+    background-image: linear-gradient(45deg,black,silver);
+    color: aliceblue;
+    margin-left: 15px;
+    text-transform: none;
+    transition: ease-in;
+}
+
+.bt:hover {
+    color: navy;
+    background-color: #333;
+}
+
+.nav-unselected {
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+#tic-tac-toe .disable {
+    text-transform:uppercase;
+    font-size:30px;
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#tic-tac-toe #game li {
+    float:left; 
+    padding:0; 
+    list-style:none;
+    text-align:center; 
+    margin-bottom:20px; 
+    color:#fff;
+    height:60px; 
+    line-height:60px; 
+    font-size:40px; 
+    color:#ccc;
+}
+
+#tic-tac-toe #game li.disable {
+    color:#fff;
+}
+
+#tic-tac-toe #game {
+    float:left; 
+    padding:0; 
+    clear:both;
+    margin: 0;
+}
+
+
+#tic-tac-toe #reset {
+    padding:5px 10px; 
+    color:#fff; 
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:20px; 
+    clear:both; 
+    cursor:pointer; 
+    float:left; 
+    text-align:center; 
+    text-transform:uppercase; 
+    outline:none; 
+    width:204px;
+}
+
+.input-prepend span.pre_text {
+    width:55px;
+
+}
+
+.input-prepend {
+    margin-bottom:10px;
+}
+
+.clr {
+    clear:both; 
+    height:0;
+}
+
+#tic-tac-toe h1 {
+    text-align:center; 
+    font-size:28px;
+
+}
+#tic-tac-toe li::-moz-selection {
+    background:none;
+    color:#000;
+}
+
+#tic-tac-toe li::-webkit-selection {
+    background:none;
+    color:#000;
+}
+
+#tic-tac-toe {
+    width:240px; 
+    margin:0 auto;
+    background-color: rgba(255, 255, 255, 0.466);
+    padding-left: 12%;
+    padding-right: 10%;
+}
+
+.input-append .win_times {
+    background:#fff; 
+    width:101px;
+}
+
+.input-append .win_text {
+    width:52px;
+}
+
+#scr {
+    display: none;
+}
